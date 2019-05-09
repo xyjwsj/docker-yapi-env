@@ -7,5 +7,7 @@ RUN npm install -g cnpm --registry=https://registry.npm.taobao.org \
 
 WORKDIR /my-yapi
 
+COPY ./oauth2Controller.js /my-yapi/vendors/node_modules/yapi-plugin-gitlab/controller
+
 ENTRYPOINT ["node"]
 CMD ["vendors/server/app.js"]
