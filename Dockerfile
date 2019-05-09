@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM node:8.16.0-alpine
 
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org \
     && cnpm install -g yapi-cli \
