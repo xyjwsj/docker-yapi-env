@@ -21,7 +21,7 @@ services:
     volumes:
       - ./yapi:/my-yapi
     entrypoint: yapi
-    command: install -v v1.3.8
+    command: install -v v1.7.0
   update:
     image: fiochen227/yapi
     depends_on:
